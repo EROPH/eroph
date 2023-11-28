@@ -1,0 +1,149 @@
+.puzzle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.results {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.results-column {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.heading {
+    font-weight: 800;
+}
+
+.result-and-id {
+    display: flex;
+    align-items: center;
+}
+
+.id-left {
+    font-weight: 800;
+    margin-right: 16px;
+    margin-left: -16px;
+    margin-top: 16px;
+}
+
+.id-right {
+    font-weight: 800;
+    margin-right: -16px;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.result {
+    border: 2px solid #B0C4DE;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    width: 240px;
+    margin-top: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.result-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result-row:not(:first-child) {
+    margin-top: 4px;
+}
+
+.result-type {
+    font-weight: 700;
+}
+
+.grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 24px;
+}
+
+.grid {
+    position: relative;
+    border: 3px solid black;
+}
+
+.grid-row {
+    border-bottom: 2px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.grid-row:first-child {
+    border-top: 2px solid black;
+}
+
+.grid-cell {
+    border-right: 2px solid black;
+    width: 43px;
+    height: 43px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-cell:first-child {
+    border-left: 2px solid black;
+}
+
+.blob {
+    width: 12px;
+    height: 12px;
+    background-color: #B0E0E6;
+    border-radius: 50%;
+}
+
+.blob span {
+    position: relative;
+    left: -12px;
+    top: -14px;
+    font-size: 14px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.symbols {
+    font-weight: 800;
+}
+
+.sidebar img {
+    height: 48px;
+    margin: 24px 0;
+}
+
+.grid-cell.shaded {
+    background-color: rgba(240, 230, 140, 0.5);
+}

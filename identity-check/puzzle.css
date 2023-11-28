@@ -1,0 +1,96 @@
+.puzzle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+    margin-top: 48px;
+}
+
+.identity-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-bottom: 36px;
+}
+
+.nino {
+    width: 30%;
+    font-size: 14pt;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-result {
+    width: 30%;
+    font-weight: 800;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aux-result {
+    width: 30%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.break {
+    height: 0;
+    flex-basis: 100%;
+}
+
+.aux-blob {
+    width: 12px;
+    height: 12px;
+    margin: 4px;
+
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.aux-blob.grey {
+    background-color: #a8a9ab;
+}
+
+.aux-blob.green {
+    background-color: #6ca965;
+}
+
+.aux-blob.yellow {
+    background-color: #c8b653;
+}
+
+.match-result.not-matched::before {
+    content: url('resources/cross.svg');
+    margin-right: 8px;
+}
+
+.match-result.matched::before {
+    content: url('resources/tick.svg');
+    margin-right: 8px;
+}
+
+hr {
+    width: 100%;
+    margin-top: 32px;
+    color: #555555;
+}
+
+.identity-row.answer {
+    margin-top: 64px;
+}
+
+.identity-row.answer .nino {
+    font-weight: 900;
+}

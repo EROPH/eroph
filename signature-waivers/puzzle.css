@@ -1,0 +1,27 @@
+.puzzle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+
+    margin-top: 24px;
+}
+
+.question {
+    font-size: 18pt;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.response {
+    margin-top: 16px;
+}
+
+.response:before {
+    content: "\"";
+}
+
+.response:after {
+    content: "\"";
+}
